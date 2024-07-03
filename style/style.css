@@ -1,0 +1,306 @@
+body, html {
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #EBFBFE;
+}
+
+* {
+    font-family: 'Playwrite MX', sans-serif;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playwrite MX', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: 073741;
+}
+
+.nav {
+    flex: 5;
+    display: flex;
+}
+
+.leftNav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.leftNav > nav > menu {
+    display: flex;
+    gap: 3em;
+    padding-left: 4em;
+}
+
+.leftNav > nav > menu > li {
+    list-style: none;
+    display: inline-block;
+}
+
+.leftNav > nav > menu > li > a {
+    display: block;
+    text-decoration: none; 
+    color: #073741;
+    font-family: 'Playwrite MX', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    transition: 300ms ease-in-out;
+}
+
+.leftNav > nav > menu > li > a:hover {
+    color: orange;
+    transition: 300ms ease-in-out;
+}
+
+.rightNav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    gap: 3em;
+}
+
+.rightNav > button {
+    height: 3.5em;
+    width: 10em;
+    border: transparent;
+    border-radius: .7em;
+}
+
+.button1, .button2 {
+    background-color: #073741;
+    color: white;
+    transition: 300ms ease-in-out;
+}
+
+.button1:hover , .button2:hover {
+    background-color: #D3F1FB;
+    color: #073741;
+    transition: 300ms ease-in-out;
+}
+
+.moreIcon {
+    display: none;
+}
+
+main {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.introText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.introLine1 {
+    flex: 1;
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introLine1 > p {
+    font-size: 5em;
+    margin: 0%;
+    word-spacing: .5em;
+    font-weight: 600;
+}
+
+.highlight {
+    font-family: 'Playwrite NZ', sans-serif;
+    background-color: #FF9F6A;
+    border-radius: .4em;
+}
+
+.introLine2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introLine2 > p {
+    font-family: 'Playwrite NZ', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.introButtons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.introButton1, .introButton2 {
+    height: 3.5em;
+    width: 10em;
+    font-family: 'Playwrite NZ', sans-serif;
+    border-radius: .7em;
+    border: transparent;
+    transition: 300ms ease-in-out;
+    background-color: #073741;
+    color: white;
+}
+
+.introButton1:hover, .introButton2:hover {
+    background-color: #D3F1FB;
+    color: #073741;
+    transition: 300ms ease-in-out;
+}
+
+.introImage {
+    flex: 1.5;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 100%;
+    width: 80%;
+    background: url(../images/merve-sensoy-UEb7vAqYb4U-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .leftNav > nav > menu {
+        gap: 2em;
+        padding-left: 2em;
+    }
+
+    .leftNav > nav > menu > li > a {
+        font-size: .75em;
+    }
+
+    .rightNav {
+        gap: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .rightNav > button {
+        height: 3em;
+        width: 9em;
+    }
+
+    .introLine1 > p {
+        font-size: 3.5em;
+        word-spacing: .2em;
+    }
+
+    .introLine2 > p {
+        font-size: 1em;
+    }
+
+    .introButton1, .introButton2 {
+        height: 3em;
+        width: 9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leftNav {
+        flex: 2;
+    }
+
+    .rightNav {
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0em;
+    }
+
+    .rightNav > button {
+        height: 2.7em;
+        width: 10em;
+        font-size: .7em;
+    }
+
+    .introLine1 > p {
+        font-size: 3em;
+    }
+
+    .introLine2 > P {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav {
+        display: none;
+    }
+
+    .logo {
+        flex: 8;
+    }
+
+    .moreIcon {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moreIcon > ion-icon {
+        font-size: 1.5em;
+        color: #073741;
+    }
+
+    .introText {
+        gap: 2em;
+    }
+
+    .introLine1 {
+        margin-top: 2em;
+    }
+
+    .introLine1 > p {
+        text-align: center;
+    }
+
+    .highlight {
+        display: block;
+        width: 5em;
+        margin: auto;
+    }
+
+    .introLine2 > p {
+        text-align: center;
+    }
+
+    .introButtons {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
